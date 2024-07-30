@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('Img/fundo.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    background: #000;
+    color: #fff;
+    padding: 10px 0;
+    position: relative; 
+    z-index: 10; 
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header .logo img {
+    width: 150px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header ul li {
+    position: relative; 
+    margin-left: 20px;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+}
+
+header ul li a:hover {
+    background: #575757;
+    border-radius: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background: #333;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 20;
+    border-radius: 5px; 
+}
+
+.dropdown-content li {
+    border-bottom: 1px solid #444;
+}
+
+.dropdown-content li a {
+    color: #fff;
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-content li a:hover {
+    background: #575757;
+}
+
+header ul li:hover .dropdown-content {
+    display: block; 
+}
+
+.hero {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.hero .owl-carousel .item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    z-index: 1; 
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* Main content styles */
+.content {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.content h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Destinations section styles */
+.destinos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.destino {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex-basis: 30%;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.destino:hover {
+    transform: scale(1.05);
+}
+
+.destino img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.destino h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.destino p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.map-link {
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.2rem;
+    color: #333;
+    text-decoration: none;
+}
+
+.map-link:hover {
+    text-decoration: underline;
+}
+
+.section-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.cultura-imagens {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+}
+.cultura-imagem {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex-basis: 30%;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.cultura-imagem:hover {
+    transform: scale(1.05); 
+}
+
+.cultura-imagem img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.cultura-imagem p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #666;
+}
+
+.historia-imagens {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+}
+.historia-imagem {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex-basis: 30%;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.historia-imagem:hover {
+    transform: scale(1.05); 
+}
+
+.historia-imagem img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.historia-imagem p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #666;
+}
+
+.cultura-imagens {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.cultura-imagem {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex-basis: 30%;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.cultura-imagem:hover {
+    transform: scale(1.05); 
+}
+
+.cultura-imagem img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.cultura-imagem p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #666;
+}
+
+.praia-imagens {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+}
+.praia-imagem {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex-basis: 30%;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.praia-imagem:hover {
+    transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+}
+
+.praia-imagem img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.Praia-imagem p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Footer styles */
+footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+}
+
+
+
+footer p {
+    margin: 0;
+}
